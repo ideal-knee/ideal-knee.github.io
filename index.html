@@ -1,3 +1,13 @@
-<h1>Welcome to dankee.com</h1>
+---
+layout: default
+---
 
-<p>This website will launch any second now.  Please press "Refresh" continuously until it does.</p>
+<h1>dankee.com</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
